@@ -64,7 +64,7 @@ Each thread has a suspend count (with a maximum value of MAXIMUM_SUSPEND_COUNT).
 
 The [ResumeThread](../processthreadsapi/nf-processthreadsapi-resumethread.md) function decrements the suspend count of a suspended thread.
 
-This function is intended for 64-bit applications. It is not supported on 32-bit Windows; such calls fail and set the last error code to ERROR_INVALID_FUNCTION. A 32-bit application can call this function on a WOW64 thread; the result is the same as calling the [SuspendThread](../processthreadsapi/nf-processthreadsapi-suspendthread.md) function.
+This function is intended for 64-bit applications. It is not supported on 32-bit Windows where calls fail and set the last error code to ERROR_INVALID_FUNCTION. A 32-bit application can call this function on a WOW64 thread; the result is the same as calling the [SuspendThread](../processthreadsapi/nf-processthreadsapi-suspendthread.md) function.
 
 ## -see-also
 
